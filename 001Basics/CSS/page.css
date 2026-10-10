@@ -1,0 +1,110 @@
+
+html body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+page {
+    width: 100%;
+    height: 100%;
+    font-size: 180px;
+    position: absolute;
+    text-align:center;
+    padding-top:30%
+}
+#spring {
+    background-color: green;
+    color: pink;
+    animation: season1 2s infinite;
+}
+
+#summer {
+    background-color: yellow;
+    color: red;
+    animation: season2 2s infinite;
+}
+
+#autumn {
+    background-color: orange;
+    color: yellow;
+    animation: season3 2s infinite;
+}
+
+#winter {
+    background-color: blue;
+    color: white;
+    animation: season4 2s infinite;
+}
+
+@keyframes season1 {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 100
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes season2 {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    40% {
+        opacity: 100
+    }
+    60% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes season3 {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 100
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes season4 {
+    0% {
+        opacity: 0
+    }
+    20% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    100% {
+        opacity: 100
+    }
+}
