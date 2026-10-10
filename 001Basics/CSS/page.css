@@ -16,27 +16,32 @@ page {
 #spring {
     background-color: green;
     color: pink;
-    animation: season1 2s infinite;
+    animation: season1 5s infinite;
 }
 
 #summer {
     background-color: yellow;
     color: red;
-    animation: season2 2s infinite;
+    animation: season2 5s infinite;
 }
 
 #autumn {
     background-color: orange;
     color: yellow;
-    animation: season3 2s infinite;
+    animation: season3 5s infinite;
+    background-image:url("../Image/0.png");
 }
 
 #winter {
     background-color: blue;
     color: white;
-    animation: season4 2s infinite;
+    animation: season4 5s infinite;
 }
-
+#z{
+    font-size: 50px;
+    display: block;
+    animation: z 5s infinite;
+}
 @keyframes season1 {
     0% {
         opacity: 0
@@ -95,16 +100,33 @@ page {
     0% {
         opacity: 0
     }
-    20% {
-        opacity: 0
-    }
     40% {
         opacity: 0
     }
     60% {
         opacity: 0
     }
-    100% {
+    80% {
         opacity: 100
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes z {
+    0% {
+        opacity: 0
+    }
+    70% {
+        opacity: 0
+    }
+    80% {
+        opacity: 100
+    }
+    90% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
     }
 }

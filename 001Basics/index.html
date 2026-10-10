@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <title>四季</title>
     <link rel="stylesheet" href="CSS/page.css">
+    <script>
+        function audioautoplay(id){
+            var audio=document.getElementById(id);
+            audio.play();
+            document.addEventListener('WeixinJSBridgeReady',function(){audio.play()},false);//微信浏览器播放音频
+        }
+    </script>
 </head>
-<body>
+<body onload="audioautoplay('Music')">
+<audio id="Music" src="Music/一个人想着一个人（曾沛慈&艾比利）.m4a" autoplay></audio>f
 <page id="spring">春</page>
 <page id="summer">夏</page>
 <page id="autumn">秋</page>
-<page id="winter">冬</page>
+<page id="winter">冬
+<span id="z">贞下启元</span></page>
 </body>
 </html>
