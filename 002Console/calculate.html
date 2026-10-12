@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        function isInteger(num){
+            return num%1===0;
+        }
+        var  price=10,count,sum;
+        count=prompt("你要多少杯咖啡");
+        //10，15，25，30,40,45;第二杯半价
+        if(isNaN(count)){document.write("请输入数字");}
+        else{
+            if(count<=0||!isInteger(count)){document.write("请输入大于0的整数");}//取1的余数为0，说明是整数
+            else if(count%2==0){
+                sum=price*count*0.75;
+                document.write("你要支付"+sum+"元");
+            }
+            else if(count%2!=0){
+                sum=price*count*0.75+2.5;
+                document.write("你要支付"+sum+"元");
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
