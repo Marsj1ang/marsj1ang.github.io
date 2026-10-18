@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">我的第一个段落</div>
+
+
+</body>
+</html>
+<script>
+    var a=Math.random();
+    var bingo=false;
+    var discount=0;
+
+    function guessnum(){
+        if(bingo){
+            return;
+        }
+        var guess=prompt("请输入你猜的骰子数字");
+        discount=Math.abs(guess-a);
+        console.info("random=="+a);
+        console.info("guess=="+guess);
+        console.info("discount="+discount);
+        if(guess==a){
+            document.getElementById("demo").innerHTML="恭喜你猜对了";
+            bingo=true;
+        }
+        else if(guess>a){
+
+            document.getElementById("demo").innerHTML="你猜的数字大了"+discount+"分";
+        }
+        else{
+            document.getElementById("demo").innerHTML="你猜的数字小了"+discount+"分";
+        }
+        document.write("<img src=\"images/"+a+".png\">");
+    }
+    a=Math.floor(a*6)+1;
+    console.info("骰子数字为："+a);
+    guessnum();
+    guessnum();
+</script>
